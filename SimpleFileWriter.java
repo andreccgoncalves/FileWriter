@@ -19,13 +19,13 @@ public class SimpleFileWriter {
      */
     public static void main(String[] args) {
         
-        String filename = "output.txt"; // this is to store the name of my file
+        String fileName = "output.txt"; // this is to store the name of my file
 
         
       // step 1 we will need a BufferedWriter and a FileWriter 
         try {
             
-            BufferedWriter myWriter = new BufferedWriter(new FileWriter(filename, false));
+            BufferedWriter myWriter = new BufferedWriter(new FileWriter(fileName, false));
             // true = append something to the file
             // false = overwrite the file
             
@@ -46,7 +46,7 @@ public class SimpleFileWriter {
             
         }
     catch(Exception e) {
-        System.out.println("Error writing to file " + filename); // if an error happens, this message will appear in the output
+        System.out.println("Error writing to file " + fileName); // if an error happens, this message will appear in the output
     }
     
 }
